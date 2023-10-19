@@ -2,11 +2,15 @@ import { useLoaderData } from "react-router-dom";
 import Banner from "../../Components/Header/Banner";
 import BrandCard from "./BrandCard";
 import Benefits from "./Benefits";
+import { useState } from "react";
 
 
 const Home = () => {
-    const brandData =useLoaderData()
-    console.log(brandData)
+    const brandloddedData =useLoaderData()
+    
+    const [brandData,setBrandData]=useState(brandloddedData)
+
+    // console.log(brandData)
     return (
         <div>
             <h2>This is Home page</h2>

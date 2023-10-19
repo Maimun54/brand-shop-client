@@ -5,13 +5,26 @@ const AddProduct = () => {
         e.preventDefault();
         const form =e.target
         const pname =form.name.value;
-        const bname =form.bname.value;
+        const brand_name =form.brand_name.value;
         const image =form.photo.value;
         const type =form.type.value;
         const price =form.price.value;
         const description =form.description.value;
         const rating =form.rating.value;
-        console.log(pname,bname,image,type,price,description,rating)
+        const newProduct={pname,brand_name,image,type,price,description,rating}
+        console.log(newProduct)
+        //send data server side
+        fetch('http://localhost:5000/product',{
+            method:'POST',
+            headers:{
+                'Content-type':'application/json'
+            },
+            body:JSON.stringify(newProduct)
+        })
+        .then(res=>res.json())
+        .then(data=>{
+            console.log(data)
+        })
     }
     return (
         <div className="mb-10">
@@ -26,13 +39,22 @@ const AddProduct = () => {
   <label className="label">
     <span className="label-text">Name</span>
   </label>
-  <input  type="text" name="bname"  required placeholder="Type your product Name" className="input input-bordered"  />
+  <input  type="text" name="name"  required placeholder="Type your product Name" className="input input-bordered"  />
 </div>
   <div className="form-control ">
   <label className="label">
     <span className="label-text">Brand Name</span>
   </label>
-  <input  type="text" name="name"  required placeholder="Type your product Brand Name" className="input input-bordered"  />
+  <select name="brand_name" className="select select-bordered w-full ">
+  {/* <option disabled selected>Brand Name</option> */}
+  <option>Toyota</option>
+  <option>BMW</option>
+  <option>Honda </option>
+  <option>Tesla</option>
+  <option>Mercedes-Benz</option>
+  <option>Ford</option>
+  
+</select>
 </div>
  
   <div className="form-control ">
@@ -47,12 +69,12 @@ const AddProduct = () => {
   </label>
   <select name="type" className="select select-bordered w-full ">
   <option disabled selected>category</option>
-  <option>Toyota</option>
-  <option>Ford</option>
-  <option>BMW</option>
-  <option>Mercedes-Benz</option>
-  <option>Tesla</option>
-  <option> Honda</option>
+  <option>RAV4 Adventure</option>
+  <option>RAV4 Hybrid</option>
+  <option>Bmw X3</option>
+  <option>Bmw X6</option>
+  <option>Ranger</option>
+  <option> Maverick</option>
   
 </select>
 </div>

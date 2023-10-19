@@ -1,5 +1,5 @@
 
-import { FaBeer } from 'react-icons/fa';
+
 const Benefits = () => {
     return (
         <div >

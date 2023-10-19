@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import swal from "sweetalert";
 import { GithubAuthProvider, GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
@@ -11,6 +11,7 @@ const Login = () => {
     const githubProvider = new GithubAuthProvider();
     const auth=getAuth(app)
     const navigate =useNavigate()
+    const location =useLocation()
     const handleLogin= e =>{
   
         e.preventDefault()

@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import swal from "sweetalert";
 import { GithubAuthProvider, GoogleAuthProvider, getAuth, signInWithPopup, updateProfile } from "firebase/auth";
@@ -9,7 +9,7 @@ const Register = () => {
     const auth=getAuth(app)
     const googleProvider = new GoogleAuthProvider();
     const githubProvider = new GithubAuthProvider();
-   const {createUser,user} = useContext(AuthContext)
+   const {createUser} = useContext(AuthContext)
    const navigate =useNavigate()
     const handleRegister =e=>{
         e.preventDefault()
@@ -37,7 +37,7 @@ const Register = () => {
         .then(result=>{
             console.log(result.user)
             navigate('/')
-            
+
             updateProfile(result.user, {
               displayName: name,
                photoURL: photo
@@ -60,9 +60,6 @@ const Register = () => {
         .then(result=>{
          console.log(result.user)
          navigate('/')
-
-         
-
         })
         .catch(error=>{
          console.error(error)
