@@ -34,7 +34,7 @@ const {_id,pname,brand_name,image,type,price,description,rating}   =products
     
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:px-20">
         {
-            products.map(product=><p key={product._id}> 
+            products.map(product=><li key={product._id}> 
             <div className="card card-compact  bg-base-100 shadow-xl">
   <figure><img className="w-[300px] h-[300px] " src={product.image} /></figure>
   <div className="card-body">
@@ -52,11 +52,11 @@ const {_id,pname,brand_name,image,type,price,description,rating}   =products
     <p>Price:{product.price}</p>
     <div className="card-actions justify-between">
       <Link to={`/productDetails/${product._id}`} ><button className="btn btn-primary">Details</button></Link>
-      <button className="btn btn-primary">Update</button>
+    <Link to='/updateProduct'><button className="btn btn-primary">Update</button></Link>  
     </div>
   </div>
 </div>
-            </p>)
+            </li>)
         }
     </div>
         </div>

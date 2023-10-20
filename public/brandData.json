@@ -3,17 +3,20 @@
       "id": 1,
       "brand_img": "https://i.ibb.co/ykqvvPP/pexels-garvin-st-villier-3874337.jpg",
       "brand_name": "Toyota",
+      "brand_image": "https://i.ibb.co/xLw8Nrj/car-6399944-1280.jpg",
       "category": "Automobiles"
     },
     {
       "id": 2,
       "brand_img": "https://i.ibb.co/qr4RxWx/pexels-mike-bird-1007410.jpg",
+      "brand_image": "https://i.ibb.co/prG8q2z/ford-422624-1280.jpg",
       "brand_name": "Ford",
       "category": "Automobiles"
     },
     {
       "id": 3,
       "brand_img": "https://i.ibb.co/svxfZXS/pexels-mike-bird-794435.jpg",
+      "brand_image": "https://i.ibb.co/xsR87r8/bmw-1596080-1280.png",
       "brand_name": "BMW",
       "category": "Automobiles"
     },
@@ -21,18 +24,21 @@
       "id": 4,
       "brand_img": "https://i.ibb.co/HH6hnJS/pexels-mike-bird-120049.jpg",
       "brand_name": "Mercedes-Benz",
+      "brand_image": "https://i.ibb.co/ZXbcdRx/mercedes-benz-2571855-1280.png",
       "category": "Automobiles"
     },
     {
       "id": 5,
       "brand_img": "https://i.ibb.co/6yW9D3f/pexels-joshua-k-ller-757186.jpg",
       "brand_name": "Tesla",
+      "brand_image": "https://i.ibb.co/f8PzD4y/tesla-7069874-1280.jpg",
       "category": "Automobiles"
     },
     {
       "id": 6,
       "brand_img": "https://i.ibb.co/8dXMB9q/pexels-albert-nunez-88628.jpg",
       "brand_name": "Honda",
+      "brand_image": "https://i.ibb.co/9pHRFPw/honda-1596081-1280.png",
       "category": "Automobiles"
     }
   ]

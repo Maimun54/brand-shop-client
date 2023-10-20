@@ -8,8 +8,9 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Register from "../Pages/Register/Register";
 import PrivateProvider from "../Provider/PrivateProvider";
 import Product from "../Pages/Add Product/Product";
-import BrandDetails from "../Pages/Home/BrandDetails";
+
 import ProductDetails from "../Pages/Add Product/ProductDetails";
+import UpdateProduct from "../Pages/UpdateProduct/UpdateProduct";
 
 
 
@@ -40,20 +41,23 @@ const router = createBrowserRouter([
           path:"/register",
           element:<Register></Register>
         },
+       
         {
-          path:"/brandDetails",
-          element:<BrandDetails></BrandDetails>
+          path:"/updateProduct",
+          element:<UpdateProduct></UpdateProduct>
         },
-        {
-          path:"/productDetails",
-          element:<ProductDetails></ProductDetails>,
-          loader:({params})=>fetch(`http://localhost:5000/product/${params.brand_name}`)
-        },
+       
         {
           path:"/product/:brand_name",
           element:<Product></Product>,
           loader:({params})=>fetch(`http://localhost:5000/product/${params.brand_name}`)
 
+        },
+        {
+          path:"/productDetails/:id",
+          element:<ProductDetails></ProductDetails>,
+          loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+        
         },
       ]
     },
