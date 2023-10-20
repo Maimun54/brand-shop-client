@@ -52,7 +52,7 @@ const {_id,pname,brand_name,image,type,price,description,rating}   =products
     <p>Price:{product.price}</p>
     <div className="card-actions justify-between">
       <Link to={`/productDetails/${product._id}`} ><button className="btn btn-primary">Details</button></Link>
-    <Link to='/updateProduct'><button className="btn btn-primary">Update</button></Link>  
+    <Link to={`/updateProduct/${product._id}`}><button className="btn btn-primary">Update</button></Link>  
     </div>
   </div>
 </div>

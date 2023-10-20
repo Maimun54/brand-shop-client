@@ -13,13 +13,15 @@ const ProductDetails = () => {
     
     return (
         <div>
-            <h2>This is product details page :{pname}</h2>
+            <div className="text-center py-5">
+            <h2 className="text-5xl text-centers font-bold">Oww you will received 20% Discount </h2>
+            </div>
             <div className="card  bg-base-100 shadow-xl">
   <figure><img src={image} alt="image" /></figure>
   <div className="card-body">
     <h2 className="card-title">Model Name: {pname}</h2>
-    <p>{description}</p>
-    <p>Price: {price} tk</p>
+    <p className="text-xl">{description}</p>
+    <p className="text-xl">Price: {price} tk</p>
     <div className="card-actions justify-end">
       <button className="btn btn-primary">Add to Cart</button>
     </div>
