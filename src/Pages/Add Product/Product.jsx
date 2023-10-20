@@ -32,31 +32,31 @@ const {_id,pname,brand_name,image,type,price,description,rating}   =products
     </Swiper>
     <h2>Product:{products.length}</h2>
     
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:px-20">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:px-20">
         {
-            products.map(product=><li key={product._id}> 
+            products.map(product=><div key={product._id}> 
             <div className="card card-compact  bg-base-100 shadow-xl">
   <figure><img className="w-[300px] h-[300px] " src={product.image} /></figure>
   <div className="card-body">
     <div className="flex">
-        <div className="w-50">
-        <h2 className="card-title ">{product.pname}</h2>
-    <h2 className="card-title">{product.brand_name}</h2>
+        <div className="w-[200px] border">
+        <h2 className="text-2xl font-bold">{product.pname}</h2>
+    <h2 className="text-xl font-bold">{product.brand_name}</h2>
         </div>
-        <div>
-        <h2 className="card-title pl-10"><img src="https://i.ibb.co/VVMvpNP/star.png" className="w-8" alt="" />{product.rating}</h2>
-    <h2 className="card-title">{product.type}</h2>
+        <div className="">
+        <h2 className="card-title  pl-10"><img src="https://i.ibb.co/VVMvpNP/star.png" className="w-8" alt="" />{product.rating}</h2>
+    <h2 className="card-title pl-10">{product.type}</h2>
         </div>
     </div>
-    <p>{product.description}</p>
-    <p>Price:{product.price}</p>
+    <p className="text-xl py-2">{product.description}</p>
+    <p className="text-xl py-2 font-bold">Price: {product.price} tk</p>
     <div className="card-actions justify-between">
       <Link to={`/productDetails/${product._id}`} ><button className="btn btn-primary">Details</button></Link>
     <Link to={`/updateProduct/${product._id}`}><button className="btn btn-primary">Update</button></Link>  
     </div>
   </div>
 </div>
-            </li>)
+            </div>)
         }
     </div>
         </div>

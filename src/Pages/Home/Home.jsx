@@ -13,13 +13,15 @@ const Home = () => {
     // console.log(brandData)
     return (
         <div>
-            <h2>This is Home page</h2>
+           
             <Banner></Banner>
+            <h2 className="text-4xl font-bold text-center py-5">OUR AWESOME BRANDS </h2>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 gird-cols-1 py-10 px-10" >
                 {
                     brandData.map(brand=><BrandCard key={brand.id} brand={brand}></BrandCard>)
                 }
             </div>
+            
             <Benefits></Benefits>
             <div className="lg:flex px-10 py-10">
                 <div>
