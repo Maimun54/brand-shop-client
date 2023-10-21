@@ -1,8 +1,11 @@
+import { useState } from "react";
 import {  useLoaderData } from "react-router-dom";
 
 
 const MyCart = () => {
-    const cartData =useLoaderData()
+    const loadedCartData =useLoaderData()
+    
+    const [cartData,setCartData]=useState(loadedCartData)
   
     // console.log(cartData)
    const handleDelete = _id=>{
@@ -18,8 +21,8 @@ const MyCart = () => {
        .then(data=>{
         console.log(data)
 
-      
-        
+      const remainingCartProduct =cartData.filter(cart=>cart._id !==_id)
+      setCartData(remainingCartProduct)
        })
    }
     return (
