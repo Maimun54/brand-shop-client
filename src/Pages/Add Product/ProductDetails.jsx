@@ -37,8 +37,13 @@ const ProductDetails = () => {
   <figure><img src={image} alt="image" /></figure>
   <div className="card-body">
     <h2 className="card-title">Model Name: {pname}</h2>
+    <h2 className="card-title">Brand Name: {brand_name}</h2>
+    <h2 className="card-title">Type : {type}</h2>
+    
     <p className="text-xl">{description}</p>
-    <p className="text-xl">Price: {price} tk</p>
+    <p className="card-title">Price: {price} tk</p>
+    
+    <h2 className="card-title ">Rating: <img src="https://i.ibb.co/VVMvpNP/star.png" className="w-8" alt="" />{rating}</h2>
     <div className="card-actions justify-center">
       <button onClick={handleCartAdd} className="btn btn-primary">Add to Cart</button>
     </div>
