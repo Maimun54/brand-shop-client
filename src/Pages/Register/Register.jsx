@@ -44,8 +44,8 @@ const Register = () => {
                
                
             })
-            .then( res=> {
-              console.log(res.user)
+            .then( ()=> {
+              
             })
             .catch((error) => {
               console.error(error)

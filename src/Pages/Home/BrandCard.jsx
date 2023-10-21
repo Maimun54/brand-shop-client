@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 
 const BrandCard = ({brand}) => {
-    // console.log(brand)
+    
     
     const {id,brand_name,brand_img,brand_image} = brand
     

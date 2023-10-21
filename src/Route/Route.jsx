@@ -33,7 +33,7 @@ const router = createBrowserRouter([
           path:"/myCart",
           element:<PrivateProvider><MyCart></MyCart></PrivateProvider>,
          
-          loader:()=>fetch('http://localhost:5000/myCart')
+          loader:()=>fetch('https://brand-shop-server-opal-theta.vercel.app/myCart')
         },
         {
           path:"/login",
@@ -47,19 +47,19 @@ const router = createBrowserRouter([
         {
           path:"/updateProduct/:id",
           element:<UpdateProduct></UpdateProduct>,
-          loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+          loader:({params})=>fetch(`https://brand-shop-server-opal-theta.vercel.app/products/${params.id}`)
         },
        
         {
           path:"/product/:brand_name",
           element:<Product></Product>,
-          loader:({params})=>fetch(`http://localhost:5000/product/${params.brand_name}`)
+          loader:({params})=>fetch(`https://brand-shop-server-opal-theta.vercel.app/product/${params.brand_name}`)
 
         },
         {
           path:"/productDetails/:id",
           element:<PrivateProvider><ProductDetails></ProductDetails></PrivateProvider>,
-          loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+          loader:({params})=>fetch(`https://brand-shop-server-opal-theta.vercel.app/products/${params.id}`)
         
         },
       ]

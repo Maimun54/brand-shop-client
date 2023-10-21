@@ -14,7 +14,7 @@ const AddProduct = () => {
         const newProduct={pname,brand_name,image,type,price,description,rating}
         console.log(newProduct)
         //send data server side
-        fetch('http://localhost:5000/product',{
+        fetch('https://brand-shop-server-opal-theta.vercel.app/product',{
             method:'POST',
             headers:{
                 'Content-type':'application/json'

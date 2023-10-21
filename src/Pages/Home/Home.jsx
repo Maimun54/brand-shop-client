@@ -15,7 +15,7 @@ const Home = () => {
         <div>
            
             <Banner></Banner>
-            <h2 className="text-4xl font-bold text-center py-5">OUR AWESOME BRANDS </h2>
+            <h2 className="md:text-4xl text-3xl font-bold text-center py-5">OUR AWESOME BRANDS </h2>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 gird-cols-1 py-10 px-10" >
                 {
                     brandData.map(brand=><BrandCard key={brand.id} brand={brand}></BrandCard>)
@@ -29,11 +29,13 @@ const Home = () => {
                     
                     </div>
                 <div className="text-center lg:pt-10">
-                    <h2 className="text-4xl font-bold lg:py-5">DYNAMIC <br /> AND ECONOMICAL</h2>
-                    <p className="lg:py-5 text-2xl">Gets speed fast, but smoothly there is <br /> no transmission, Restores the charge on the road thanks to regenerative braking.
+                    <h2 className="lg:text-4xl md:text-4xl font-bold lg:py-5">DYNAMIC <br /> AND ECONOMICAL</h2>
+                    <p className="lg:py-5 md:py-5 py-2 lg:text-2xl md:text-2xl">Gets speed fast, but smoothly there is <br /> no transmission, Restores the charge on the road thanks to regenerative braking.
 
                       </p>
-                      <button className="btn btn-success"> REGISTER FOA A TEST DRIVE</button>
+                      <div className="py-5">
+                      <button className="btn btn-success py-5"> REGISTER FOA A TEST DRIVE</button>
+                      </div>
                 </div>
             </div>
         </div>

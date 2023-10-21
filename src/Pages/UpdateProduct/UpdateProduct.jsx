@@ -17,7 +17,7 @@ const UpdateProduct = () => {
         const updateProduct={pname,brand_name,image,type,price,description,rating}
         console.log(updateProduct)
         //send data server side
-        fetch(`http://localhost:5000/products/${_id}`,{
+        fetch(`https://brand-shop-server-opal-theta.vercel.app/products/${_id}`,{
             method:'PUT',
             headers:{
                 'Content-type':'application/json'

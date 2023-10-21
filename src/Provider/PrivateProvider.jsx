@@ -9,7 +9,7 @@ const PrivateProvider = ({children}) => {
     const location = useLocation()
     console.log(location)
      if(dataLoader){
-        return <span className="loading loading-spinner loading-lg mx-auto text-center"></span>
+     return <span className="loading loading-spinner loading-lg mx-auto text-center"></span>
      }
     if(user){
         return children

@@ -32,14 +32,14 @@ const {_id,pname,brand_name,image,type,price,description,rating}   =products
     </Swiper>
     <h2>Product:{products.length}</h2>
     
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:px-20">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:px-20 lg:py-5">
         {
             products.map(product=><div key={product._id}> 
-            <div className="card card-compact  bg-base-100 shadow-xl">
+            <div className="card lg:h-[700px] card-compact  bg-base-100 shadow-xl">
   <figure><img className="w-[300px] h-[300px] " src={product.image} /></figure>
   <div className="card-body">
     <div className="flex">
-        <div className="w-[200px] border">
+        <div className="w-[200px] ">
         <h2 className="text-2xl font-bold">{product.pname}</h2>
     <h2 className="text-xl font-bold">{product.brand_name}</h2>
         </div>
