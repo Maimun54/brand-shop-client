@@ -42,10 +42,9 @@ const Register = () => {
               displayName: name,
                photoURL: photo
                
-               
             })
             .then( ()=> {
-              
+              console.log('Profile updated')
             })
             .catch((error) => {
               console.error(error)
