@@ -10,7 +10,8 @@
 ### About & features this website
 <hr/>
 <!-- <p>ChildCare is a full-stack Assets-management-s service provider web app.</p>   -->
-  **All Brand**:Experience the convenience of easily purchasing products from all your favorite brands in one seamless process.
+
+**All Brand** :Experience the convenience of easily purchasing products from all your favorite brands in one seamless process.
 
  **Product Information**:Discovering product details is a breeze! Our user-friendly interface ensures that you can easily access comprehensive information about any product.
 
