@@ -3,6 +3,7 @@ import Banner from "../../Components/Header/Banner";
 import BrandCard from "./BrandCard";
 import Benefits from "./Benefits";
 import { useState } from "react";
+import TestDrive from "../TestDrive/TestDrive";
 
 
 const Home = () => {
@@ -38,6 +39,7 @@ const Home = () => {
                       </div>
                 </div>
             </div>
+            <TestDrive></TestDrive>
         </div>
     );
 };
