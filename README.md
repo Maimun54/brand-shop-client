@@ -1,6 +1,6 @@
 
 ### BrandShop
-<a  href="https://child-blog-cfc06.web.app">
+<a  href="https://brand-shop-47252.web.app/">
     <img  width="100%"  height="100%"  src="https://i.ibb.co/CsMqYsQ/screenshot-195.png"/>
 </a>
 
@@ -37,7 +37,7 @@
 
 <hr/>
 
-<h2>Website Live Link :https://github.com/Maimun54/brand-shop-server</h2>
+<h2>Website Live Link :https://brand-shop-47252.web.app/</h2>
 
 **[Back-end Repository](https://github.com/Maimun54/brand-shop-server)**
 
